@@ -1,5 +1,6 @@
 package hudson.plugins.tfs;
 
+import hudson.plugins.DigesterUtils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -11,13 +12,14 @@ import java.util.List;
 
 import hudson.model.Run;
 import hudson.scm.RepositoryBrowser;
-import org.apache.commons.digester.Digester;
+//import org.apache.commons.digester.Digester;
+import org.apache.commons.digester3.Digester;
 import org.xml.sax.SAXException;
 
 import hudson.plugins.tfs.model.ChangeLogSet;
 import hudson.plugins.tfs.model.ChangeSet;
 import hudson.scm.ChangeLogParser;
-import hudson.util.Digester2;
+//import hudson.util.Digester2;
 
 /**
  * TeamFoundation change log reader.
@@ -36,7 +38,7 @@ public class ChangeSetReader extends ChangeLogParser {
     /** Performs the actual parsing. */
     public ChangeLogSet parse(final Run build, final RepositoryBrowser<?> browser, final Reader reader) throws IOException, SAXException {
         List<ChangeSet> changesetList = new ArrayList<ChangeSet>();
-        Digester digester = new Digester2();
+        Digester digester = DigesterUtils.createDigester(!Boolean.getBoolean(ChangeSetReader.class.getName() + ".UNSAFE"));
         digester.push(changesetList);
 
         digester.addObjectCreate("*/changeset", ChangeSet.class);
