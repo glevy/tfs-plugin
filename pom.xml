@@ -73,19 +73,19 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:https://github.com/jenkinsci/tfs-plugin.git</connection>
-    <developerConnection>scm:git:https://github.com/jenkinsci/tfs-plugin.git</developerConnection>
+    <connection>scm:git:https://github.com/glevy/tfs-plugin.git</connection>
+    <developerConnection>scm:git:https://github.com/glevy/tfs-plugin.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
     <snapshotRepository>
-      <id>repo.jenkins-ci.org</id>
-      <url>https://repo.jenkins-ci.org/snapshots/</url>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/glevy/tfs-plugin</url>
     </snapshotRepository>
     <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>https://repo.jenkins-ci.org/releases/</url>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/glevy/tfs-plugin</url>
     </repository>
   </distributionManagement>
 
