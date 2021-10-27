@@ -80,12 +80,12 @@
 
   <distributionManagement>
     <snapshotRepository>
-      <id>repo.jenkins-ci.org</id>
-      <url>https://repo.jenkins-ci.org/snapshots/</url>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/glevy/tfs-plugin</url>
     </snapshotRepository>
     <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>https://repo.jenkins-ci.org/releases/</url>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/glevy/tfs-plugin</url>
     </repository>
   </distributionManagement>
 
