@@ -8,7 +8,7 @@ This plugin triggers a release in Azure DevOps, through a post-build step in Jen
 
 ## Quick links
 * The legacy [wiki] page on the Jenkins Confluence instance
-* CI build status - [![Build Status](https://ci.jenkins.io/buildStatus/icon?job=Plugins/tfs-plugin/master)](https://ci.jenkins.io/job/Plugins/job/tfs-plugin/job/master/)
+* CI build status - [![Maven Package](https://github.com/glevy/tfs-plugin/actions/workflows/maven-publish.yml/badge.svg)](https://github.com/glevy/tfs-plugin/actions/workflows/maven-publish.yml)
 * Issues are tracked by the [Jenkins JIRA]
 * Download the latest release [from the Jenkins CDN](http://updates.jenkins-ci.org/latest/tfs.hpi) or [from the GitHub Releases page](https://github.com/jenkinsci/tfs-plugin/releases)
 
